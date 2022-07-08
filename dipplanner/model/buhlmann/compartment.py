@@ -253,8 +253,6 @@ class Compartment():
                          (pp_n2_inspired - self.pp_n2 -
                           (rate_n2 / self.k_n2)) *
                          math.exp(-self.k_n2 * seg_time))
-            if self.h_n2 == 4:
-                print(self.h_n2, ": result:", new_pp_n2, "# Pi:", pp_n2_inspired, "# rate n2:", rate_n2, "# seg_time:", seg_time, "# k_n2:", self.k_n2)
             self.set_pp(new_pp_he, new_pp_n2)
 
     def get_m_value_at(self, pressure):

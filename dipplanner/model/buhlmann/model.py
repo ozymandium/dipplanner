@@ -424,7 +424,6 @@ class Model():
                     seg_time,
                     (ambiant_pressure - self.pp_h2o) * (1.0 - f_he - f_n2))
         if seg_time > 0:
-            print(seg_time)
             for comp in self.tissues:
                 comp.const_depth(pp_he_inspired, pp_n2_inspired, seg_time)
 
